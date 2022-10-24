@@ -1,0 +1,91 @@
+:root {
+  --p-swipe-padding: var(--padding-xs) var(--padding-sm);
+  --p-swipe-height: 140px;
+  --p-swipe-border-radius: 10px;
+  --p-swipe-doc-justify: center;
+  --p-swipe-doc-color: var(--blue);
+  --p-swipe-doc-inactivated-color: var(--white);
+  --p-swipe-doc-bg-color: var(--white);
+  --p-swipe-doc-inactivated-bg-color: rgba(255, 255, 255, .8);
+  --p-swipe-doc-font-size: var(--font-size-xs);
+}
+
+.p-swipe {
+  box-sizing: border-box;
+  padding: var(--p-swipe-padding);
+
+  .van-swipe {
+    height: var(--p-swipe-height, 140px);
+    border-radius: var(--p-swipe-border-radius, 10px);
+  }
+
+  .van-swipe-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__indicators {
+    position: absolute;
+    padding: 0 var(--padding-sm);
+    bottom: var(--van-swipe-indicator-margin);
+    width: 100%;
+
+    .van-space {
+      justify-content: var(--p-swipe-doc-justify);
+    }
+  }
+
+  &__indicator {
+    background: var(--p-swipe-doc-inactivated-bg-color);
+    transition-property: width, height, border-radius, background-color, color, opacity;
+    transition-duration: var(--animation-duration-base);
+
+    &--active {
+      background: var(--p-swipe-doc-bg-color);
+    }
+
+    &--round {
+      width: 6px;
+      height: 4px;
+      border-radius: 2px;
+
+      &--active {
+        width: 10px;
+      }
+    }
+
+    &--square {
+      width: 6px;
+      height: 6px;
+      border-radius: 0;
+
+      &--active {
+        width: 10px;
+      }
+    }
+
+    &--number {
+      width: 16px;
+      height: 16px;
+      font-size: var(--p-swipe-doc-font-size);
+      color: var(--p-swipe-doc-inactivated-color);
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2px;
+
+      &--active {
+        color: var(--p-swipe-doc-color);
+      }
+    }
+  }
+
+  &__image {
+  }
+}

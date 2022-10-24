@@ -1,0 +1,18 @@
+:root {
+  --p-kanban-padding: 0;
+  --p-kanban-background: transparent;
+  --p-kanban-wrapper-padding: var(--padding-xs) var(--padding-sm) var(--padding-sm);
+  --p-kanban-wrapper-background: transparent;
+  --p-kanban-radius: 10px;
+}
+
+.p-kanban {
+  padding: var(--p-kanban-padding);
+  background: var(--p-kanban-background);
+
+  &__wrapper {
+    padding: var(--p-kanban-wrapper-padding);
+    background: var(--p-kanban-wrapper-background);
+    border-radius: var(--p-kanban-radius);
+  }
+}

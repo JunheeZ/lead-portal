@@ -1,0 +1,99 @@
+@import "../../styles/mixns/ellipsis.less";
+
+:root {
+  --p-info-list-padding: 0;
+  --p-info-list-background: transparent;
+  --p-info-list-wrapper-padding: var(--padding-xs) var(--padding-sm) var(--padding-sm);
+  --p-info-list-wrapper-background: transparent;
+  --p-info-list-radius: 10px;
+  --p-info-list-height: 0;
+  --p-info-list-item-image-width: 108px;
+  --p-info-list-item-image-height: 80px;
+  --p-info-list-item-background: #FFF;
+  --p-info-list-item-radius: 8px;
+  --p-info-list-item-padding: var(--padding-sm);
+}
+
+.p-info-list {
+  padding: var(--p-info-list-padding);
+  background: transparent;
+
+  &__wrapper {
+    padding: var(--p-info-list-wrapper-padding);
+    background: var(--p-info-list-wrapper-background);
+    border-radius: var(--p-info-list-radius);
+  }
+
+  &__list {
+    &--scroll {
+      overflow-y: auto;
+      height: var(--p-info-list-height);
+    }
+  }
+
+  &__info {
+    background: var(--p-info-list-item-background);
+    padding: var(--p-info-list-item-padding);
+    border-radius: var(--p-info-list-item-radius);
+
+    &--title {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &--image {
+      width: var(--p-info-list-item-image-width);
+      height: var(--p-info-list-item-image-height);
+      border-radius: var(--p-info-list-item-radius);
+      overflow: hidden;
+    }
+
+    &--header {
+      .multi-ellipsis(2);
+      font-size: var(--font-size-lx);
+      color: var(--text-color);
+      margin-bottom: 10px;
+      line-height: var(--line-height-lx);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &--describe {
+      color: var(--gray-4);
+      font-size: var(--font-size-lg);
+      line-height: var(--line-height-md);
+      .multi-ellipsis(2);
+      margin-bottom: var(--padding-sm);
+    }
+
+    &--time {
+      font-size: var(--font-size-sm);
+      color: var(--text-color-3);
+      line-height: var(--font-size-sm);
+    }
+  }
+
+  &-colorful {
+    &__header {
+      .multi-ellipsis(1);
+    }
+  }
+
+  &-simple {
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__header {
+      .multi-ellipsis(1);
+      margin-bottom: 0;
+    }
+
+    &__describe {
+      margin-bottom: 0;
+    }
+
+    &__time {
+      white-space: nowrap;
+    }
+  }
+}

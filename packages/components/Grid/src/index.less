@@ -1,0 +1,91 @@
+@import "../../styles/mixns/ellipsis.less";
+@import "../../styles/mixns/hairline.less";
+
+:root {
+  --van-grid-item-content-padding: 0;
+  --van-grid-item-content-background: transparent;
+
+  --p-grid-padding: 0;
+  --p-grid-background: transparent;
+  --p-grid-wrapper-padding: var(--padding-xs) var(--padding-sm) var(--padding-sm);
+  --p-grid-wrapper-background: transparent;
+  --p-grid-wrapper-radius: 10px;
+
+  --p-grid-border-color: var(--border-color);
+  --p-grid-item-font-size: 24px;
+  --p-grid-item-font-color: var(--blue);
+  --p-grid-item-label-font-size: var(--font-size-lg);
+  --p-grid-item-label-font-color: var(--title-color);
+  --p-grid-item-count-width: auto;
+  --p-grid-item-count-height: 40px;
+  --p-grid-item-count-radius: 8px;
+  --p-grid-item-count-background: transparent;
+  --p-grid-item-padding: var(--padding-md) var(--padding-xs);
+  --p-grid-item-align: center;
+}
+
+
+.p-grid {
+  padding: var(--p-grid-padding);
+  background: var(--p-grid-background);
+
+  &__wrapper {
+    background: var(--p-grid-wrapper-background);
+    padding: var(--p-grid-wrapper-padding);
+    border-radius: var(--p-grid-wrapper-radius);
+  }
+
+  &__cell {
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 100%;
+    padding: var(--p-grid-item-padding);
+    border-radius: var(--p-grid-item-count-radius);
+    font-size: var(--p-grid-item-font-size);
+    color: var(--p-grid-item-font-color);
+    overflow: hidden;
+
+    &__image {
+      width: var(--p-grid-item-count-width);
+      height: var(--p-grid-item-count-height);
+      margin: 0 auto;
+    }
+
+    &__name {
+      font-size: var(--p-grid-item-label-font-size);
+      color: var(--p-grid-item-label-font-color);
+      text-align: var(--p-grid-item-align);
+
+      &--ellipsis {
+        .multi-ellipsis(1);
+      }
+    }
+
+    &__count {
+      border-radius: var(--p-grid-item-count-radius);
+      background: var(--p-grid-item-count-background);
+      font-family: var(--price-integer-font-family);
+      height: var(--p-grid-item-count-height);
+      text-align: var(--p-grid-item-align);
+
+      &--width {
+        padding: 0 5px;
+        width: var(--p-grid-item-count-width);
+      }
+
+      &--ellipsis {
+        overflow: hidden;
+
+        span {
+          display: inline-block;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

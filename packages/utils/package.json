@@ -1,0 +1,10 @@
+{
+  "name": "@portal/utils",
+  "main": "index.ts",
+  "module": "index.ts",
+  "keywords": [],
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  }
+}

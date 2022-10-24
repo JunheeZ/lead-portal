@@ -1,0 +1,39 @@
+:root {
+  --p-title-icon-size: 20px;
+  --p-title-color: var(--title-color);
+  --p-title-font-size: var(--font-size-lxx);
+  --p-title-padding: var(--padding-xs) 0;
+  --p-title-background: transparent;
+}
+
+.p-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--p-title-background);
+
+  &--isLink {
+    opacity: 1;
+    transition: opacity .2s;
+
+    &:active {
+      opacity: .6;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    padding: var(--p-title-padding);
+    color: var(--p-title-color);
+    font-size: var(--p-title-font-size);
+    line-height: 1.2;
+  }
+
+  &__icon {
+    width: var(--p-title-icon-size);
+    height: var(--p-title-icon-size);
+    display: block;
+    margin-right: var(--padding-xs);
+  }
+}
