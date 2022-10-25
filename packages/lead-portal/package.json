@@ -1,6 +1,28 @@
 {
   "name": "lead-portal",
   "version": "1.0.0",
-  "dependencies": {
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.ts",
+  "unpkg": "dist/index.umd.js",
+  "style": "dist/style.css",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/types/lead-portal/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vangleer/vangle.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "author": "vangleer",
+  "peerDependencies": {
+    "vue": "^3.2.0"
   }
 }

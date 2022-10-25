@@ -1,8 +1,8 @@
-import * as ECharts from "echarts";
-import type { EChartsOption } from "echarts/types/dist/shared";
-import type { CSSProperties } from "vue";
+import type { CSSProperties, PropType } from "vue";
 import { computed, defineComponent, onMounted, onUnmounted, ref, shallowRef, unref, watch } from "vue";
-import { createNamespace, deepMerge, handleNumberToPX, truthProp } from "../../../utils";
+import type { EChartsOption } from "echarts/types/dist/shared";
+import * as ECharts from "echarts";
+import { createNamespace, deepMerge, handleNumberToPX, truthProp } from "@lead-portal/utils";
 import { useResizeObserver } from "@vueuse/core";
 
 import "./index.less";
@@ -131,11 +131,11 @@ export default defineComponent({
       const style: CSSProperties = {};
       const {height, width} = props;
       if (height) {
-        style.height = isString(height) ? height : `${height}px`;
+        style.height = isString(height) ? height : `${ height }px`;
       }
 
       if (width) {
-        style.width = isString(width) ? width : `${width}px`;
+        style.width = isString(width) ? width : `${ width }px`;
       }
 
       return style;
@@ -172,9 +172,9 @@ export default defineComponent({
     });
 
     return () => (
-      <div class={bem()} ref={RootRef} style={unref(rootStyle)}>
-        {props.showTitle && <header class={bem("header")}>{props.title}</header>}
-        <div style={unref(EChartStyle)} class={bem("echarts")} ref={ERef}></div>
+      <div class={ bem() } ref={ RootRef } style={ unref(rootStyle) }>
+        { props.showTitle && <header class={ bem("header") }>{ props.title }</header> }
+        <div style={ unref(EChartStyle) } class={ bem("echarts") } ref={ ERef }></div>
       </div>
     );
   }

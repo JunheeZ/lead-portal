@@ -31,9 +31,9 @@ const baseConfig = defineConfig({
     },
     outDir,
     // 解决编译后 vue 引入问题
-    /*commonjsOptions: {
+    commonjsOptions: {
       esmExternals: true
-    },*/
+    },
     rollupOptions: {
       external: ["vue"],
       output: {
