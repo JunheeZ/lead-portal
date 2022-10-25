@@ -1,8 +1,10 @@
 {
-  "name": "@portal/utils",
+  "name": "@lead-portal/utils",
+  "version": "1.0.0",
+  "description": "lead-门户系统方法集",
   "main": "index.ts",
   "module": "index.ts",
-  "keywords": [],
+  "scripts": {},
   "license": "MIT",
   "peerDependencies": {
     "vue": "^3.2.0"

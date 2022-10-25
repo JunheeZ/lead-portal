@@ -8,6 +8,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lead-portal": "workspace:^0.0.3"
+  },
   "devDependencies": {}
 }
