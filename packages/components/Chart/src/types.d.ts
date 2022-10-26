@@ -4,6 +4,5 @@ import { EChartsOption } from "echarts/types/dist/shared";
 
 export type PChartProps = Partial<ExtractPropTypes<typeof chartProps>>;
 
-export { EChartsOption };
-
-export type PChartOption = EChartsOption;
+export interface PChartOption extends EChartsOption {
+}

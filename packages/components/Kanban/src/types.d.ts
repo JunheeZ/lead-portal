@@ -1,8 +1,8 @@
 import type { ExtractPropTypes } from "vue";
-
 import { kanbanProps } from "./Kanban";
-import { PChartProps } from "@lead-portal/components/Chart";
+import { PChartProps } from "../../Chart";
 
 export type PKanbanProps = Partial<ExtractPropTypes<typeof kanbanProps>>;
 
-export type PKanbanOption = PChartProps | {};
+export interface PKanbanOption extends PChartProps {
+}

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2016",
     "module": "esnext",
     "moduleResolution": "node",
     "strict": true,
@@ -17,18 +17,13 @@
     "noUnusedParameters": true,
     "experimentalDecorators": true,
     "lib": ["dom", "esnext"],
-    "types": ["vite/client", "node"],
+    "types": ["node", "unplugin-vue-define-options"],
     "typeRoots": ["./node_modules/@types/", "./types"],
     "noImplicitAny": false,
     "skipLibCheck": true,
+    "rootDir": ".",
     "paths": {
-      "@portal/*": ["packages/*"]
+      "@lead-portal/*": ["packages/*"]
     }
-  },
-  "include": [
-    "types/**/*.d.ts",
-    "types/**/*.ts",
-    "vite.config.ts"
-  ],
-  "exclude": ["node_modules", "dist", "**/*.js"]
+  }
 }
