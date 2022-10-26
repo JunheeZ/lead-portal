@@ -1,13 +1,12 @@
 {
   "name": "@lead-portal/components",
-  "version": "1.0.1",
+  "version": "0.0.4",
   "description": "lead-门户系统组件",
   "main": "index.ts",
   "module": "index.ts",
   "unpkg": "index.js",
   "jsdelivr": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "private": false,

@@ -1,6 +1,6 @@
 {
   "name": "lead-portal",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "main": "dist/index.es.js",
   "module": "dist/index.es.ts",
   "unpkg": "dist/index.umd.js",

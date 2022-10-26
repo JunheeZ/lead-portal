@@ -1,7 +1,7 @@
 {
   "name": "lead-portal",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/build.js",
@@ -15,10 +15,11 @@
     "@vitejs/plugin-vue": "^3.0.0",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "@vueuse/core": "^9.3.1",
-    "chalk": "^5.1.2",
+    "chalk": "4.1.0",
     "echarts": "^5.4.0",
     "enquirer": "^2.3.6",
     "eslint": "^8.26.0",
+    "fs-extra": "^10.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.6.0",
