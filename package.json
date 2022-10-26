@@ -1,9 +1,10 @@
 {
   "name": "lead-portal",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "scripts": {
+    "play": "pnpm build && pnpm dev --filter ./play",
     "build": "node ./scripts/build.js",
     "release": "pnpm build && node ./scripts/release.js"
   },
@@ -30,7 +31,7 @@
     "semver": "^7.3.8",
     "typescript": "^4.6.4",
     "unplugin-vue-define-options": "^0.12.2",
-    "vant": "^3.6.4",
+    "vant": "^4.0.0-rc.6",
     "vite": "^3.1.8",
     "vite-plugin-dts": "^1.6.6",
     "vue": "^3.2.37",

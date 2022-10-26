@@ -1,6 +1,6 @@
 {
   "name": "@lead-portal/components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "lead-门户系统组件",
   "main": "index.ts",
   "module": "index.ts",
