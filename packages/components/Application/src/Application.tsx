@@ -11,7 +11,7 @@ import {
 } from "../../../utils";
 import { PTitle } from "../../Title";
 import { BaseProps } from "../../base/props";
-import { PApplicationCellStyle, PApplicationDirectionModel, PApplicationOption } from "./types";
+import { PApplicationCellStyle, PApplicationDirectionModel, PApplicationOption } from "./typing";
 import { Grid, GridItem, Image as VanImage, Space } from "vant";
 import { isEmpty, pick, take } from "lodash-es";
 import MoreIcon from "./more-app.svg";

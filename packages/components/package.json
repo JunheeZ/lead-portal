@@ -1,6 +1,6 @@
 {
   "name": "@lead-portal/components",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "lead-门户系统组件",
   "main": "index.ts",
   "module": "index.ts",
@@ -10,5 +10,5 @@
   "author": "",
   "license": "ISC",
   "private": false,
-  "types": "types/components/index.d.ts"
+  "types": "types/packages/components/index.d.ts"
 }

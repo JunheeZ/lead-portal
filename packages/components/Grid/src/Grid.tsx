@@ -1,4 +1,4 @@
-import type { PGridItemStyle, PGridOption } from "./types";
+import type { PGridItemStyle, PGridOption } from "./typing";
 import type { CSSProperties } from "vue";
 import { computed, defineComponent, unref } from "vue";
 import {

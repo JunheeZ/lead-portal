@@ -6,7 +6,7 @@ export const PChart = withInstall(Chart);
 
 export default PChart;
 
-export type { PChartProps, PChartOption } from "./src/types";
+export type { PChartProps, PChartOption } from "./src/typing";
 
 declare module "vue" {
   export interface GlobalComponents {

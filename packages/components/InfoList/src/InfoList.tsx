@@ -3,7 +3,7 @@ import { computed, defineComponent, unref } from "vue";
 import { createBEM, createNamespace, handleNumberToPX, handleOpenWindow, isUrl, makeArrayProp } from "../../../utils";
 import { PTitle } from "../../Title";
 import "./index.less";
-import { PInfoListOption, PInfoListOptionStyle } from "./types";
+import { PInfoListOption, PInfoListOptionStyle } from "./typing";
 import { BaseProps } from "../../base/props";
 import { Image as VanImage, Space } from "vant";
 import { ThemeEnum } from "../../../enums";

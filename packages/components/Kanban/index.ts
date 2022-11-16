@@ -6,7 +6,7 @@ export const PKanban = withInstall(Kanban);
 
 export default PKanban;
 
-export type { PKanbanProps, PKanbanOption } from "./src/types";
+export type { PKanbanProps, PKanbanOption } from "./src/typing";
 
 declare module "vue" {
   export interface GlobalComponents {

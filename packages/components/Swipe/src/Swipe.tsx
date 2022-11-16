@@ -1,4 +1,4 @@
-import type { PSwipeDocStyle, PSwipeOptions } from "./types";
+import type { PSwipeDocStyle, PSwipeOptions } from "./typing";
 import type { SwipeInstance } from "vant";
 import type { CSSProperties } from "vue";
 import { Space, Swipe, SwipeItem } from "vant";

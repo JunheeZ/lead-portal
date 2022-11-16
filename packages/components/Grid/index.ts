@@ -5,7 +5,7 @@ import Grid from "./src/Grid";
 export const PGrid = withInstall(Grid);
 export default PGrid;
 
-export type { PGridProps, PGridOption, PGridItemStyle } from "./src/types";
+export type { PGridProps, PGridOption, PGridItemStyle } from "./src/typing";
 
 declare module "vue" {
   export interface GlobalComponents {

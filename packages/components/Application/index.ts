@@ -5,7 +5,7 @@ export const PApplication = withInstall(Application);
 
 export default PApplication;
 
-export type { PApplicationProps, PApplicationOption, PApplicationDirectionModel, PApplicationCellStyle } from "./src/types";
+export type { PApplicationProps, PApplicationOption, PApplicationDirectionModel, PApplicationCellStyle } from "./src/typing";
 
 declare module "vue" {
   export interface GlobalComponents {

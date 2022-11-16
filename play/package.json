@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "lead-portal": "workspace:^0.0.5",
+    "lead-portal": "workspace:^0.0.7",
     "vue": "^3.2.41"
   },
   "devDependencies": {

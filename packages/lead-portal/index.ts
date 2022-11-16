@@ -1,4 +1,4 @@
-export * from "../components";
+export * from "@lead-portal/components";
 
 import installer from "./makeInstaller";
 
